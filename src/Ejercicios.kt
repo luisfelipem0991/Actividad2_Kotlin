@@ -48,3 +48,15 @@ fun reto4() {
     println("\n--- Reto 4: Carrito de Compras ---")
     println("Conteo: $conteo")
 }
+// 5. Historial de Navegación Reversible
+fun reto5() {
+    val historial = arrayOf("google.com", "github.com", "kotlinlang.org", "stackoverflow.com", "medium.com")
+    val invertido = arrayOfNulls<String>(historial.size)
+    for (i in historial.indices) {
+        invertido[i] = historial[historial.size - 1 - i]
+    }
+
+    println("\n--- Reto 5: Historial Reversible ---")
+    println("Original: ${historial.joinToString()}")
+    println("Invertido: ${invertido.joinToString()}")
+}
