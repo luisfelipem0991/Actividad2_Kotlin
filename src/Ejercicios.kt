@@ -29,3 +29,11 @@ fun reto2() {
     println("\n--- Reto 2: Filtro Senior ---")
     println("Empleados Senior: $seniorNames")
 }
+// 3. Limpieza de Contactos Duplicados
+fun reto3() {
+    val contactos = listOf("300123", "311456", "300123", "320789", "311456", "350111", "300123")
+    val unicos = contactos.toSet().sorted()
+
+    println("\n--- Reto 3: Agenda Limpia ---")
+    println("Contactos únicos ordenados: $unicos")
+}
