@@ -210,3 +210,15 @@ fun reto17() {
     println("\n--- Reto 17: Matriz Almacén ---")
     println("Suma Principal: $principal, Suma Secundaria: $secundaria")
 }
+// 18. Fusión de Recetas
+fun reto18() {
+    val chef1 = mapOf("Sal" to 10.0, "Pimienta" to 5.0, "Harina" to 500.0)
+    val chef2 = mapOf("Sal" to 5.0, "Azúcar" to 100.0, "Harina" to 200.0)
+
+    val compras = (chef1.keys + chef2.keys).associateWith {
+        (chef1[it] ?: 0.0) + (chef2[it] ?: 0.0)
+    }
+
+    println("\n--- Reto 18: Fusión de Recetas ---")
+    println("Lista de compras: $compras")
+}
