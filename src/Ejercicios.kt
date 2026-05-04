@@ -128,3 +128,15 @@ fun reto10() {
     println("Original: $empleados")
     println("Rotada (k=$k): $rotada")
 }
+// 11. Organizador de Maleta
+fun reto11() {
+    val objetos = listOf("Ropa" to 2, "Zapatos" to 1, "Laptop" to 2, "Libro" to 1, "Cámara" to 3)
+    val porPeso = mutableMapOf<Int, MutableList<String>>()
+
+    for (obj in objetos) {
+        porPeso.getOrPut(obj.second) { mutableListOf() }.add(obj.first)
+    }
+
+    println("\n--- Reto 11: Organizador de Maleta ---")
+    println("Objetos por peso: $porPeso")
+}
