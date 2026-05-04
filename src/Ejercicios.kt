@@ -19,3 +19,13 @@ fun reto1() {
     println("--- Reto 1: Control de Gastos ---")
     println("Total: $total, Promedio: $promedio, Máximo: $max, Mínimo: $min")
 }
+// 2. Filtro de Empleados Senior
+fun reto2() {
+    val empleados = listOf("Ana" to 25, "Carlos" to 35, "Beatriz" to 42, "David" to 28, "Elena" to 31)
+    val seniorNames = empleados
+        .filter { it.second > 30 }
+        .map { it.first.uppercase() }
+
+    println("\n--- Reto 2: Filtro Senior ---")
+    println("Empleados Senior: $seniorNames")
+}
