@@ -326,4 +326,16 @@ fun reto24() {
     println("\n--- Reto 24: Contenedores Balanceados ---")
     println("Manifiesto: $manifiesto - ¿Válido?: $esValido")
 }
+// 25. Rendimiento de Maratón
+fun reto25() {
+    val tiempos = mutableListOf(120.0, 115.0, 140.0, 110.0, 130.0)
+    tiempos.sort()
+    tiempos.removeAt(0) // Mínimo
+    tiempos.removeAt(tiempos.size - 1) // Máximo
+    val promedioReal = tiempos.average()
+
+    println("\n--- Reto 25: Rendimiento Maratón ---")
+    println("Promedio sin outliers: $promedioReal")
+}
+
 
